@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Menu</title>
+    <!--BOOTSTRAP ICON-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--BOOTSTRAP ICON-->
+    <!--ICONIFY-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!--ICONIFY-->
+</head>
+<body>
+    <header>
+        <nav class="navbar-menu">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo.png" alt="logo restaurante"></a>
+            </div><!--logo-->
+            
+            <div class="nome-menu">
+                <div class="rodape-nome">
+                    <a href="../index.html">inicio</a>
+                </div>
+                <h1>menu</h1>
+                <div class="rodape-nome">
+                    <a href="cardapio.html">cardápio</a>
+                    <a href="bebidas.html">bebidas</a>
+                </div>
+            </div><!--nome-menu-->
+            
+            <div class="mobile-menu" >
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="nav-list" >
+                <li><a href="../index.html">início</a></li>
+                <li><a href="cardapio.html">cardápio</a></li>
+                <li><a href="bebidas.html">bebidas</a></li>
+            </ul>
+        
+        
+        </nav><!--navbar-menu-->
+    </header>
+
+    <main>
+
+        <section class="desc-menu-desktop">
+            <div class="imagens">
+                <div class="img-port" style="background-image: url(../img/Untitled.png);">
+                    <div class="overlay"> <a href="cardapio.html">café da manhã</a> </div>
+                </div><!--img-port-->
+                <div class="img-port" style="background-image: url(../img/imagem-almoco.png);">
+                    <div class="overlay"> <a href="cardapio.html">almoço</a> </div>
+                </div><!--img-port-->
+                <div class="img-port" style="background-image: url(../img/imagem-janta.png);">
+                    <div class="overlay"><a href="cardapio.html">janta</a></div>
+                </div><!--img-port-->
+            </div><!--imagens-->
+
+            <div class="bebidas-menu">
+                <div class="titulo-tipo-bebida">
+                    <h3>bebida</h3>
+                </div><!--titulo-tipo-bebida-->
+                <div class="escolha-tipo-bebida">
+                        <a href="bebidas.html">alcoólica</a>
+                        <iconify-icon icon="twemoji:tumbler-glass"></iconify-icon>
+                </div><!--escolha-tipo-bebida-->
+                <div class="escolha-tipo-bebida">
+                    <a href="bebidas.html"> <span>não</span> alcoólica</a>
+                    <iconify-icon icon="streamline-emojis:tropical-drink"></iconify-icon>
+                </div>
+            </div><!--bebidas-menu-->
+        </section><!--desc-menu-desktop-->
+
+
+        <section class="desc-menu">
+            <div class="txt-momento-ref">
+                <h2>Qual o momento <span>da sua refeição?</span></h2>
+                <div class="tipos-ref">
+                    <ul>
+                        <li><a href="cardapio.html">café da manhã</a></li>
+                        <li><a href="cardapio.html">almoço</a></li>
+                        <li><a href="cardapio.html">janta</a></li>
+                    </ul>
+                </div>
+            </div><!--txt-momento-ref-->
+        </section>
+    </main>
+    <script src="../js/menu.js" defer></script>
+</body>
+</html>
