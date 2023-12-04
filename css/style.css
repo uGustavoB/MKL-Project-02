@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&display=swap');
+
+/* Cores personalizadas */
+:root {
+    --white: #F8F7F3;
+    --gray: #3B3B3B;
+    --lightgray: #ECECE8;
+    --vinered: #CD0232;
+    --darkblue: #011246;
+    --blue: #2552E6;
+    --purple: #2A2B5B;
+    --green: #019907;
+    --lightgreen: #8CE619;
+    --lightbrown: #FE9B67;
+    --yellow: #FFBF2A;
+}
+  
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    background: url(../img/logo.png) center/contain no-repeat;
+}
+.background-nav{
+    background: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), center/cover no-repeat url(../img/background.png);
+}
+.background-nav h1{
+    font-family: 'Inknut Antiqua', serif;
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-align: center;
+    border-right: 5px solid var(--white);
+}
