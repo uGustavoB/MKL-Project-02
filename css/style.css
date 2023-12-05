@@ -33,8 +33,35 @@
 .background-nav h1{
     font-family: 'Inknut Antiqua', serif;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     white-space: nowrap;
     text-align: center;
-    border-right: 5px solid var(--white);
+    border-right: 6px solid var(--yellow);
+    animation: 
+        typing-erasing 8s steps(34, end) infinite,
+        cursor .5s step-end infinite alternate;
+}
+
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing-erasing{
+    0%{
+        width: 0;
+    }
+    40%{
+        width: 100%;
+    }
+     70%{
+        width: 100%;
+     }
+    90%{
+        width: 0.01%;
+    }
+    100%{
+        width: 0.01%;
+    }
 }
