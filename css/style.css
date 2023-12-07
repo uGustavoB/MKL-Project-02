@@ -23,16 +23,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
-.logo{
-    background: url(../img/logo.png) center/contain no-repeat;
-}
-.background-nav{
-    background: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), center/cover no-repeat url(../img/background.png);
-}
-.background-nav h1{
-    font-family: 'Inknut Antiqua', serif;
-    border-right: 6px solid var(--yellow);
+.bg-nav h1{
+    /* border-right: 6px solid var(--yellow); */
     animation: 
         typing-erasing 10s steps(34, end) infinite,
         cursor .5s step-end infinite alternate;

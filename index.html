@@ -6,64 +6,205 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        backgroundImage: {
+                            nav: "linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(./img/background.png)",
+                            logo: "url(./img/logo.png)",
+                            comidas: "linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./img/comida.png)",
+                            bebidas: "linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./img/refri.jpg)",
+                            sobremesa: "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./img/bolin.jpg)",
+                            reserva: "linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./img/reserva.jpg)"
+                        },
+                        colors: {
+                            "new-white": "var(--white)",
+                            "new-gray": "var(--gray)",
+                            "new-light-gray": "var(--lightgray)",
+                            "new-vine-red": "var(--vinered)",
+                            "new-dark-blue": "var(--darkblue)",
+                            "new-blue": "var(--blue)",
+                            "new-purple": "var(--purple)",
+                            "new-green": "var(--green)",
+                            "new-light-green": "var(--lightgreen)",
+                            "new-light-brown": "var(--lightbrown)",
+                            "new-yellow": "var(--yellow)",
+                        },
+                        fontFamily: {
+                            'montserrat': ['Montserrat', 'sans-serif'],
+                            'inknut': ['"Inknut Antiqua"', 'sans-serif']
+                        },
+                        screens: {
+                            lg: '999px',
+                        },
+                    },
+                },
+            };
+        </script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
         <title>Sabor de Brasil</title>
     </head>
-    <body class="text-[color:var(--purple)] bg-[color:var(--lightgray)]">
+    <body class="text-new-purple bg-light-gray">
        <header class="h-screen">
-            <nav class="h-[8vh] bg-[color:var(--white)] flex justify-between items-center text-xl">
+            <nav class="h-[8vh] bg-new-white flex justify-between items-center text-xl">
                 <div class="basis-[calc(100%_/_3)] text-right">
-                    <a href="" class="inline-block hover:scale-110 transition ease-in-out duration:500">MENU</a>
+                    <a href="" class="inline-block hover:scale-110 transition ease-in-out duration:500 max-lg:hidden">MENU</a>
                 </div>
-                <div class="logo-bg w-[280px] h-[280px] flex justify-center items-center relative bg-[color:var(--white)] rounded-[80px]">
-                    <a href="" class="logo w-[180px] h-[180px] relative top-[50px] hover:scale-105 transition ease-in-out duration:500"></a>
+                <div class="logo-bg w-72 h-72 flex justify-center items-center relative bg-new-white rounded-[80px] max-lg:ml-[52px]">
+                    <a href="" class="bg-logo bg-center bg-contain bg-no-repeat w-[180px] h-[180px] relative top-12 hover:scale-105 transition ease-in-out duration:500"></a>
                 </div>
                 <div class="basis-[calc(100%_/_3)]">
                     <ul class="flex">
                         <li class="hidden mx-5 hover:scale-110 transition ease-in-out duration:500"><a href="">MENU</a></li>
-                        <li class="mx-5 hover:scale-110 transition ease-in-out duration:500"><a href="">RESERVA</a></li>
-                        <li class="mx-5 hover:scale-110 transition ease-in-out duration:500"><a href="">CONTATO</a></li>
+                        <li class="mx-5 hover:scale-110 transition ease-in-out duration:500 max-lg:hidden"><a href="#reserva">RESERVA</a></li>
+                        <li class="mx-5 hover:scale-110 transition ease-in-out duration:500 max-lg:hidden"><a href="#contato">CONTATO</a></li>
                     </ul>
                 </div>
+                <div class="lg:hidden relative right-10 px-[10px] rounded-full bg-new-light-gray hover:cursor-pointer">
+                    <div class="w-8 h-0.5 my-2 bg-new-purple"></div>
+                    <div class="w-8 h-0.5 my-2 bg-new-purple"></div>
+                    <div class="w-8 h-0.5 my-2 bg-new-purple"></div>
+                </div>
             </nav>
-            <section class="background-nav h-[92vh] bg-fixed flex justify-center items-center flex-col text-[color:var(--white)]">
-                <div class="flex flex-col items-center">
-                    <h1 class="text-5xl mb-[25px] w-full overflow-hidden whitespace-nowrap">Variedades Brasileiras</h1>
+            <section class="bg-nav bg-center bg-cover bg-no-repeat h-[92vh] bg-fixed flex justify-end items-center flex-col text-new-white">
+                <div class="flex flex-col items-center basis-full justify-center">
+                    <h1 class="text-5xl font-inknut border-r-new-yellow border-r-[6px] border-solid mb-[25px] w-full overflow-hidden whitespace-nowrap">Variedades Brasileiras</h1>
                     <img src="/img/brazil-flag.jpg" alt="" class="w-[100px] rounded-[15px]">
                 </div>
                 
-                <a href="#contato" class="down-arrow bg-[color:var(--yellow)] w-[30px] h-[30px] flex justify-center items-center rounded-full relative top-[353px]"><i class="bi bi-chevron-down text-xl" style="color: #F8F7F3;"></i></a>
+                <a href="#contato" class="down-arrow bg-new-yellow w-[30px] h-[30px] flex justify-center items-center rounded-full relative top-[17px]"><i class="bi bi-chevron-down text-xl" style="color: #F8F7F3;"></i></a>
             </section>
-       </header>
-       <main>
-        <section class="py-[100px] px-[15%] flex flex-wrap justify-around items-stretch text-center">
-            <div class="basis-full mb-[50px]">
-                <h1 class="text-5xl font-bold my-[20px]">Conheça o nosso restaurante</h1>
-                <p class="text-xl">Queremos levar praticidade, comodidade e comida de qualidade para você, com uma diversidade de comidas das 5 regiões do país.</p>
-            </div>
-            <div class="basis-6/12 flex items-center flex-col text-[20px]">
-                <img src="/img/missao.png" alt="" class="w-[80px] h-80px my-[15px]">
-                <h1 class="text-[2rem] font-bold">Missão</h1>
-                <p class="leading-7 my-[15px]">Oferecer aos nossos clientes um cardápio variado, preservando a essência da culinária típica brasileira. Utilizando ingredientes altamente frescos, selecionados e de alta qualidade.</p>
-            </div>
-            <div class="basis-6/12 flex items-center flex-col text-[20px]">
-                <img src="/img/valores.png" alt="" class="w-[80px] h-[80px] my-[15px]">
-                <h1 class="text-[2rem] font-bold">Valores</h1>
-                <p class="leading-7 my-[15px]">Possuímos melhor experiência de consumo. Aqui, oferecemos:</p>
-                <div>
-                    <ul class="list-inside text-left list-disc">
-                        <li>Produtos frescos</li>
-                        <li>Praticidade</li>
-                        <li>Qualidade</li>
-                    </ul>
-                    <ul class="list-inside text-left list-disc">
-                        <li>Inovação</li>
-                        <li>Higiene</li>
+        </header>
+        <main>
+            <section class="py-[100px] px-[15%] flex flex-wrap justify-around items-stretch text-center">
+                <div class="basis-full mb-[50px]">
+                    <h1 class="text-5xl font-bold my-[20px]">Conheça o nosso restaurante</h1>
+                    <p class="text-xl">Queremos levar praticidade, comodidade e comida de qualidade para você, com uma diversidade de comidas das 5 regiões do país.</p>
+                </div>
+                <div class="basis-6/12 flex items-center flex-col text-[20px]">
+                    <img src="/img/missao.png" alt="" class="w-[80px] h-80px my-[15px]">
+                    <h1 class="text-[2rem] font-bold">Missão</h1>
+                    <p class="leading-7 my-[15px] mx-[10px]">Oferecer aos nossos clientes um cardápio variado, preservando a essência da culinária típica brasileira. Utilizando ingredientes altamente frescos, selecionados e de alta qualidade.</p>
+                </div>
+                <div class="basis-6/12 flex items-center flex-col text-[20px]">
+                    <img src="/img/valores.png" alt="" class="w-[80px] h-[80px] my-[15px]">
+                    <h1 class="text-[2rem] font-bold">Valores</h1>
+                    <p class="leading-7 my-[15px] mx-[10px]">Possuímos melhor experiência de consumo. Aqui, oferecemos:</p>
+                    <div class="flex">
+                        <ul class="list-inside text-left list-disc mx-[10px]">
+                            <li>Produtos frescos</li>
+                            <li>Praticidade</li>
+                            <li>Qualidade</li>
+                        </ul>
+                        <ul class="list-inside text-left list-disc">
+                            <li>Inovação</li>
+                            <li>Higiene</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="w-10/12 h-9 bg-new-green mx-auto rounded-[20px]"></div>
+        
+            <section class="py-[100px] px-[10%]">
+                <div class="flex">
+                    <div class="bg-comidas bg-center bg-cover bg-no-repeat w-[500px] h-[300px] flex justify-center items-center rounded-[100px]">
+                        <div class="h-16 w-1.5">
+                            <div class="h-1/2 bg-new-yellow rounded-t"></div>
+                            <div class="h-1/2 bg-new-green rounded-b"></div>
+                        </div>
+                        <h1 class="text-5xl text-new-white font-inknut mx-2.5">COMIDAS</h1>
+                    </div><!--bg-comidas-->
+                    <p class="text-xl font-bold w-6/12 mx-8 self-center">Descubra um festival de sabores em cada prato do nosso cardápio. Da culinária regional à contemporânea, cada pedaço do Brasil ganha vida em nossas criações gastronômicas. Uma explosão de sabores aguarda por você, proporcionando uma experiência culinária única.</p>
+                </div>
+                <div class="flex flex-row-reverse mt-12">
+                    <div class="bg-bebidas bg-center bg-cover bg-no-repeat w-[500px] h-[300px] flex justify-center items-center rounded-[100px]">
+                        <div class="h-16 w-1.5">
+                            <div class="h-1/2 bg-new-yellow rounded-t"></div>
+                            <div class="h-1/2 bg-new-green rounded-b"></div>
+                        </div>
+                        <h1 class="text-5xl text-new-white font-inknut mx-2.5">BEBIDAS</h1>
+                    </div>
+                    <p class="text-xl font-bold w-6/12 mx-8 self-center">Elevamos a experiência gastronômica com nossas bebidas exclusivas. De coquetéis artesanais a vinhos refinados, cada gole é uma celebração dos melhores sabores. Descubra a harmonia perfeita entre a culinária e as bebidas, garantindo uma experiência completa e memorável.</p>
+                </div>
+                <div class="flex mt-12">
+                    <div class="bg-sobremesa bg-center bg-cover bg-no-repeat w-[500px] h-[300px] flex justify-center items-center rounded-[100px]">
+                        <div class="h-16 w-1.5">
+                            <div class="h-1/2 bg-new-yellow rounded-t"></div>
+                            <div class="h-1/2 bg-new-green rounded-b"></div>
+                        </div>
+                        <h1 class="text-5xl text-new-white font-inknut mx-2.5">Sobremesa</h1>
+                    </div>
+                    <p class="text-xl font-bold w-6/12 mx-8 self-center">Finalize sua refeição com nossas irresistíveis sobremesas. Uma sinfonia de texturas e sabores, cada doce tentação é preparada para satisfazer os paladares mais exigentes. Permita-se deleitar-se com a doçura que encerra sua experiência gastronômica de forma sublime.</p>
+                </div>
+            </section>
+
+            <div class="w-10/12 h-9 mb-24 bg-new-yellow mx-auto rounded-[20px]"></div>
+
+            <section class="bg-reserva bg-center bg-cover bg-no-repeat flex justify-around items-center flex-wrap" id="reserva">
+                <div class="max-w-lg">
+                    <h1 class="text-2xl text-new-white font-bold m-5">O que está esperando? <br>Faça já sua reserva</h1>
+                    <ul class="m-5 text-new-white text-base tracking-wider text-lg">
+                        <li class="list-inside list-disc">Reserve agora e mergulhe numa jornada de sabores brasileiros únicos. Pratos tradicionais e modernos celebram a diversidade culinária do país. Garanta sua mesa para uma experiência gastronômica inesquecível!</li> <br>
+                        <li class="list-inside list-disc">Desfrute de um atendimento exclusivo, adaptado às suas preferências. De ocasiões especiais a jantares casuais, nossa equipe está pronta para tornar sua noite memorável. Garanta seu lugar para uma experiência personalizada.</li>
                     </ul>
                 </div>
-            </div>
-        </section>
-       </main>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+                <form action="" class="max-w-lg bg-new-white p-4 m-5">
+                    <h1 class="text-2xl font-bold">Faça sua reserva aqui:</h1>
+                    <label for="name"><b>Nome:</b></label>
+                    <input type="text" placeholder="Digite seu nome:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5" required>
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" placeholder="Digite seu email:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5" required>
+                    <label for="tel"><b>Telefone:</b></label>
+                    <input type="tel" placeholder="Digite seu telefone:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5" required>
+                    <label for="qtde"><b>Quantidade de pessoas:</b></label>
+                    <select name="01" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                    </select>
+                    <label for="date"><b>Data:</b></label>
+                    <input type="date" placeholder="Digite a data da reserva:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5" required>
+                    <button type="submit" class="text-new-white border-none bg-new-yellow py-4 px-5 w-full cursor-pointer">Reservar</button>
+                </form>
+            </section>
+        </main>
+        <footer class="py-20 px-[10%] bg-new-purple text-new-white flex" id="contato">
+            <ul class="w-3/12">
+                <h1 class="text-2xl font-bold mb-4">Sabor de Brasil</h1>
+                <p class="mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, doloremque.</p>
+                <div class="flex justify-around flex-wrap text-2xl w-4/5">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </ul><!--Coluna 1-->
+            <ul class="w-3/12">
+                <h1 class="text-2xl font-bold mb-4">Suporte</h1>
+                <li class="my-2.5"><a href="#">FAQ</a></li>
+                <li class="my-2.5"><a href="#">Como funciona</a></li>
+                <li class="my-2.5"><a href="#">Contato</a></li>
+                <li class="my-2.5"><a href="#">Trabalhe conosco</a></li>
+            </ul><!--Coluna 2-->
+            <ul class="w-3/12">
+                <h1 class="text-2xl font-bold mb-4">Contate-nos</h1>
+                <li class="my-2.5"><a href="tel:+55011940028922">+55 (83)9-4002-8922</a></li>
+                <li class="my-2.5"><a href="mailto:sabordebrasil@gmail.com">sabordebrasil@gmail.com</a></li>
+                <li class="my-2.5">João Pessoa - Paraíba - Brasil</li>
+            </ul><!--Coluna 3-->
+            <ul class="w-3/12">
+                <h1 class="text-2xl font-bold mb-4">Venha nos conhecer</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7640000402102!2d-34.838802302936095!3d-7.119509127270921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd364635b103%3A0x1aa6cb3590cd9be4!2sAv.%20Pres.%20Epit%C3%A1cio%20Pessoa%2C%203501%20-%20Estados%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058032-000!5e0!3m2!1spt-BR!2sbr!4v1699106011775!5m2!1spt-BR!2sbr" width="250px" height="250px" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </ul><!--Coluna 4-->
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     </body>
 </html>
