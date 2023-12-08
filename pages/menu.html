@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        backgroundImage: {
+                            nav: "linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/buffet4.jpg)",
+                            logo: "url(../img/logo.png)",
+                        },
+                        colors: {
+                            "new-white": "var(--white)",
+                            "new-gray": "var(--gray)",
+                            "new-light-gray": "var(--lightgray)",
+                            "new-vine-red": "var(--vinered)",
+                            "new-dark-blue": "var(--darkblue)",
+                            "new-blue": "var(--blue)",
+                            "new-purple": "var(--purple)",
+                            "new-green": "var(--green)",
+                            "new-light-green": "var(--lightgreen)",
+                            "new-light-brown": "var(--lightbrown)",
+                            "new-yellow": "var(--yellow)",
+                        },
+                        fontFamily: {
+                            'montserrat': ['Montserrat', 'sans-serif'],
+                            'inknut': ['"Inknut Antiqua"', 'sans-serif']
+                        },
+                        screens: {
+                            lg: '999px',
+                        },
+                    },
+                },
+            };
+        </script>
+        <title>Sabor de Brasil</title>
+    </head>
+    <body>
+        <header class="h-screen">
+            <nav class="h-[8vh] bg-new-white flex justify-between items-center text-xl">
+                <div class="basis-[calc(100%_/_3)] text-right">
+                    <a href="./pages/menu.html" class="inline-block hover:scale-110 transition ease-in-out duration:500 max-lg:hidden">MENU</a>
+                </div>
+                <div class="logo logo-bg w-72 h-72 flex justify-center items-center relative bg-new-white rounded-[80px] max-lg:ml-[52px] max-lg:w-48 max-lg:h-48 max-lg:rounded-[50px]">
+                    <a href="../index.html" class="bg-logo bg-center bg-contain bg-no-repeat w-[180px] h-[180px] relative top-12 hover:scale-105 transition ease-in-out duration:500 max-lg:w-32 max-lg:h-32 max-lg:top-9"></a>
+                </div>
+                <div class="basis-[calc(100%_/_3)]">
+                    <ul class="nav-list flex max-lg:hidden max-lg:absolute max-lg:w-[50vh] max-lg:h-[92vh] max-lg:flex-col max-lg:items-center max-lg:justify-around max-lg:translate-x-full max-lg:right-0 max-lg:top-[8vh] max-lg:bg-new-white">
+                        <li class="hidden mx-5 hover:scale-110 transition ease-in-out duration:500"><a href="./pages/menu.html">MENU</a></li>
+                        <li class="mx-5 hover:scale-110 transition ease-in-out duration:500 max-lg:hidden"><a href="#reserva">RESERVA</a></li>
+                        <li class="mx-5 hover:scale-110 transition ease-in-out duration:500 max-lg:hidden"><a href="#contato">CONTATO</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu lg:hidden relative right-10 px-[10px] rounded-full bg-new-light-gray hover:cursor-pointer">
+                    <div class="w-8 h-0.5 my-2 bg-new-purple"></div>
+                    <div class="w-8 h-0.5 my-2 bg-new-purple"></div>
+                    <div class="w-8 h-0.5 my-2 bg-new-purple"></div>
+                </div>
+            </nav>
+            <section class="bg-nav bg-center bg-cover bg-no-repeat h-[92vh] bg-fixed flex justify-end items-center flex-col text-new-white">
+                
+            </section>
+        </header>
+        <script src="../js/mobile-menu.js"></script>
+    </body>
+</html>
