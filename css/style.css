@@ -23,9 +23,15 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-.bg-nav h1{
+.bg-nav h1.type-animation1{
     animation: 
         typing-erasing 10s steps(34, end) infinite,
+        cursor .5s step-end infinite alternate;
+}
+
+.bg-nav h1.type-animation2{
+    animation: 
+        typing-erasing 10s steps(33, end) infinite,
         cursor .5s step-end infinite alternate;
 }
 
