@@ -14,11 +14,19 @@
                         backgroundImage: {
                             nav: "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/buffet4.jpg)",
                             logo: "url(../img/logo.png)",
-                            nordeste: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/imagem-nordeste.jpeg)",
-                            norte: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/imagem-norte.jpeg)",
-                            centroeste: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/imagem-centro-oeste.jpeg)",
-                            sul: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/imagem-sul.png)",
-                            sudeste: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/imagem-sudeste.jpeg)",
+                            entrada: "linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/entradas.jpg)",
+                            caipirinha: "url(../img/caipirinha.jpg)",
+                            acaraje: "url(../img/acaraje.jpg)",
+                            chimarrao: "url(../img/chimarrao.jpg)",
+                            canape: "url(../img/canape.jpg)",
+                            churras: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/churras.jpg)",
+                            penne: "linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/penne.jpg)",
+                            carbonara: "url(../img/carbonara.jpg)",
+                            tacaca: " url(../img/tacaca.jpg)",
+                            feijoada: " url(../img/feijoada.jpg)",
+                            parmegiana: " url(../img/parmegiana.webp)",
+                            torta: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/torta.avif)",
+
                         },
                         colors: {
                             "new-white": "var(--white)",
@@ -47,7 +55,7 @@
         </script>
         <title>Sabor de Brasil</title>
     </head>
-    <body class="text-new-purple bg-new-white>
+    <body class="text-new-purple bg-new-light-gray">
         <header class="h-screen">
             <nav class="h-[8vh] bg-new-white flex justify-between items-center text-xl">
                 <div class="basis-[calc(100%_/_3)] text-right">
@@ -69,17 +77,159 @@
                     <div class="line3 transition-all duration-500 ease-[ease] w-8 h-0.5 my-2 bg-new-purple"></div>
                 </div><!--Menu-Hambúrguer-->
             </nav><!--NavBar-->
-            <section class="bg-nav bg-center bg-cover bg-no-repeat h-[92vh] flex justify-center items-center text-new-white px-[5%] py-[100px] max-xl:flex-wrap max-xl:h-max max-xl:items-end">
+            <section class="bg-nav bg-center bg-cover bg-no-repeat h-[92vh] flex justify-center items-center text-new-white px-[5%] py-[100px] max-xl:flex-wrap">
                 <div class="max-xl:mt-5 text-center">
-                    <h1 class="text-5xl max-md:text-3xl font-inknut border-r-new-yellow mb-8">Cada prato é uma nova <span class="font-inknut text-new-green">experiência</span>.</h1>
-                    <p class="text-2xl">Uma jornada culinária que celebra sabores autênticos e experiências inesquecíveis.</p>
+                    <h1 class="text-4xl max-md:text-3xl font-inknut border-r-new-yellow mb-8">Cada prato é uma nova <span class="font-inknut text-new-green">experiência</span>.</h1>
+                    <p class="text-xl">Uma jornada culinária que celebra sabores autênticos e experiências inesquecíveis.</p>
                 </div><!--main-text-->
             </section><!--Header-Main-view-->
         </header>
 
-        <main>
+        <main class="bg-new-light-gray">
+
+            <h1 class="mx-auto text-5xl mt-24 font-inknut text-new-gray border-new-gray border-y-2 w-fit">Nosso Menu</h1>
+            
+            <section class="bg-new-light-gray px-[5%] py-24 flex items-start justify-center max-lg:flex-col">
+                <div class="bg-entrada w-[450px] max-lg:w-full max-lg:h-[500px] h-[736px] bg-cover bg-end bg-no-repeat mr-12 shadow-2xl max-lg:mr-0"></div>
+                <div class="text-new-gray text-2xl">
+                    <h1 class="font-inknut text-3xl mb-12 max-lg:text-center max-lg:mt-16">Entradas</h1>
+                    <!--Caipirinha-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-caipirinha bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Caipirinha</h1>
+                                <p>Bebida tradicional Brasileira à base de cachaça, limão e açúcar.</p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <!--Acarajé-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-acaraje bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Acarajé</h1>
+                                <p>Bolinho de feijão frito, recheado com vatapá, camarão e caruru.</p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <!--Chimarrão-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-chimarrao bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Chimarrão</h1>
+                                <p>Chá de Erva Mate.</p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <!--Canapé-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-canape bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Canapé</h1>
+                                <p>Fatias finas de peixe ao urucum sobre pequenos canapés.</p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <a href="" class="text-new-yellow border-2 border-new-yellow inline-block p-4 hover:bg-new-yellow hover:text-new-light-gray">Mais entradas</a>
+                </div>
+            </section><!--Entradas-->
+
+            <div class="bg-churras bg-center bg-cover bg-no-repeat w-full h-[300px]"></div>
+
+            <section class="bg-new-light-gray px-[5%] py-24 flex items-start justify-center flex-row-reverse max-lg:flex-col">
+                <div class="bg-penne w-[450px] max-lg:w-full max-lg:h-[500px] h-[736px] bg-cover bg-end bg-no-repeat ml-12 shadow-2xl max-lg:ml-0"></div>
+                <div class="text-new-gray text-2xl">
+                    <h1 class="font-inknut text-3xl mb-12 max-lg:text-center max-lg:mt-16">Menu Principal</h1>
+                    <!--Carbonara-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-carbonara bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Carbonara</h1>
+                                <p>Massa com ovos, queijo, guanciale e pimenta preta.</p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <!--Tacacá-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-tacaca bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Tacacá</h1>
+                                <p>Sopa amazônica com tucupi, goma de tapioca, camarão e jambu.     </p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <!--Feijoada-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-feijoada bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Feijoada</h1>
+                                <p>Cozido de feijão-preto com carne de porco e linguiça.</p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <!--Parmegiana-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-parmegiana bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Parmegiana</h1>
+                                <p>Carne empanada, molho de tomate e queijo derretido. </p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <a href="" class="text-new-yellow border-2 border-new-yellow inline-block p-4 hover:bg-new-yellow hover:text-new-light-gray float-right">Mais pratos</a>
+                </div>
+            </section><!--Menu Principal-->
+            
+            <div class="bg-torta bg-center bg-cover bg-no-repeat w-full h-[300px]"></div>
+
 
         </main>
+
+
+        <footer class="py-20 px-[10%] bg-new-purple text-new-white flex max-lg:flex-col" id="contato">
+            <ul class="w-3/12 max-lg:w-full mb-8">
+                <h1 class="text-2xl font-bold mb-4">Sabor de Brasil</h1>
+                <p class="mb-10">Uma Jornada Culinária que Celebra Sabores Autênticos e Experiências Inesquecíveis.</p>
+                <div class="flex justify-around flex-wrap text-2xl w-4/5">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </ul><!--Coluna 1-->
+            <ul class="w-3/12 max-lg:w-full mb-8">
+                <h1 class="text-2xl font-bold mb-4">Suporte</h1>
+                <li class="my-2.5"><a href="#">FAQ</a></li>
+                <li class="my-2.5"><a href="#">Como funciona</a></li>
+                <li class="my-2.5"><a href="#">Contato</a></li>
+                <li class="my-2.5"><a href="#">Trabalhe conosco</a></li>
+            </ul><!--Coluna 2-->
+            <ul class="w-3/12 max-lg:w-full mb-8">
+                <h1 class="text-2xl font-bold mb-4">Contate-nos</h1>
+                <li class="my-2.5"><a href="tel:+55011940028922">+55 (83)9-4002-8922</a></li>
+                <li class="my-2.5"><a href="mailto:sabordebrasil@gmail.com">sabordebrasil@gmail.com</a></li>
+                <li class="my-2.5">João Pessoa - Paraíba - Brasil</li>
+            </ul><!--Coluna 3-->
+            <ul class="w-3/12 max-lg:w-full mb-8">
+                <h1 class="text-2xl font-bold mb-4">Venha nos conhecer</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7640000402102!2d-34.838802302936095!3d-7.119509127270921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd364635b103%3A0x1aa6cb3590cd9be4!2sAv.%20Pres.%20Epit%C3%A1cio%20Pessoa%2C%203501%20-%20Estados%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058032-000!5e0!3m2!1spt-BR!2sbr!4v1699106011775!5m2!1spt-BR!2sbr" width="250px" height="250px" class="max-lg:w-full" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </ul><!--Coluna 4-->
+        </footer>
         <script src="../js/mobile-menu.js"></script>
     </body>
 </html>
