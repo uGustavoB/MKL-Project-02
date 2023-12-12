@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" class="scroll-smooth">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
                 theme: {
                     extend: {
                         backgroundImage: {
-                            nav: "linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/buffet4.jpg)",
+                            nav: "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/buffet4.jpg)",
                             logo: "url(../img/logo.png)",
                             nordeste: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/imagem-nordeste.jpeg)",
                             norte: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/imagem-norte.jpeg)",
@@ -39,6 +39,7 @@
                         },
                         screens: {
                             lg: '999px',
+                            '2xl': '1366px',
                         },
                     },
                 },
@@ -46,45 +47,39 @@
         </script>
         <title>Sabor de Brasil</title>
     </head>
-    <body>
+    <body class="text-new-purple bg-new-white>
         <header class="h-screen">
             <nav class="h-[8vh] bg-new-white flex justify-between items-center text-xl">
                 <div class="basis-[calc(100%_/_3)] text-right">
                     <a href="./menu.html" class="inline-block hover:scale-110 transition ease-in-out duration:500 max-lg:hidden">MENU</a>
-                </div>
-                <div class="logo logo-bg w-72 h-72 flex justify-center items-center relative bg-new-white rounded-[80px] max-lg:ml-[52px] max-lg:w-48 max-lg:h-48 max-lg:rounded-[50px]">
-                    <a href="../index.html" class="bg-logo bg-center bg-contain bg-no-repeat w-[180px] h-[180px] relative top-12 hover:scale-105 transition ease-in-out duration:500 max-lg:w-32 max-lg:h-32 max-lg:top-9"></a>
-                </div>
+                </div><!--Menu-Link-->
+                <div class="logo logo-bg w-72 h-72 flex justify-center items-center relative bg-new-white rounded-[80px] max-lg:ml-[52px] max-lg:w-48 max-lg:h-48 max-lg:min-w-[12rem] max-lg:rounded-[50px] max-2xl:w-60 max-2xl:h-60 max-2xl:rounded-[60px]">
+                    <a href="../index.html" class="bg-logo bg-center bg-contain bg-no-repeat w-[180px] h-[180px] relative top-12 hover:scale-105 transition ease-in-out duration:500 max-lg:w-32 max-lg:h-32 max-lg:top-9 max-2xl:w-40 max-2xl:h-40"></a>
+                </div><!--Logo-->
                 <div class="basis-[calc(100%_/_3)]">
-                    <ul class="nav-list flex max-lg:hidden max-lg:absolute max-lg:w-[50vh] max-lg:h-[92vh] max-lg:flex-col max-lg:items-center max-lg:justify-around max-lg:translate-x-full max-lg:right-0 max-lg:top-[8vh] max-lg:bg-new-white">
+                    <ul class="nav-list flex max-lg:hidden max-lg:absolute max-lg:w-full max-lg:h-[92vh] max-lg:flex-col max-lg:items-center max-lg:justify-around max-lg:translate-x-full max-lg:right-0 max-lg:top-[8vh] max-lg:bg-new-light-gray">
                         <li class="hidden mx-5 hover:scale-110 transition ease-in-out duration:500"><a href="./menu.html">MENU</a></li>
                         <li class="mx-5 hover:scale-110 transition ease-in-out duration:500 max-lg:hidden"><a href="../index.html#reserva">RESERVA</a></li>
                         <li class="mx-5 hover:scale-110 transition ease-in-out duration:500 max-lg:hidden"><a href="../index.html#contato">CONTATO</a></li>
                     </ul>
-                </div>
+                </div><!--Mobile-Links-List-->
                 <div class="mobile-menu lg:hidden relative right-10 px-[10px] rounded-full bg-new-light-gray hover:cursor-pointer">
-                    <div class="w-8 h-0.5 my-2 bg-new-purple"></div>
-                    <div class="w-8 h-0.5 my-2 bg-new-purple"></div>
-                    <div class="w-8 h-0.5 my-2 bg-new-purple"></div>
-                </div>
-            </nav>
-            <section class="bg-nav bg-center bg-cover bg-no-repeat h-[92vh] bg-fixed flex justify-around items-center text-new-white px-[10%] py-[100px]">
-                <div>
-                    <h1 class="type-animation2 text-4xl max-md:text-3xl font-inknut border-r-new-yellow border-r-[6px] border-solid mb-[25px] w-full overflow-hidden whitespace-nowrap">Cada prato é uma nova <span class="font-inknut text-new-green">experiência</span>.</h1>
-                    <p class="text-xl">Uma jornada culinária que celebra sabores autênticos e experiências inesquecíveis.</p>
-                </div>
-                <!-- <div class="w-[500px] min-w-[465px] bg-new-white text-new-purple rounded-3xl">
-                    <h1 class="text-3xl font-bold m-5">Para saber mais, clique na região desejada:</h1>
-                    <div class="flex flex-wrap justify-center items-center text-center text-new-white m-5">
-                        <div class="bg-nordeste bg-center bg-cover bg-no-repeat basis-full p-5 m-1 rounded-3xl"><a href="#" class="font-bold text-2xl m-1.5">Nordeste</a></div>
-                        <div class="bg-norte bg-center bg-cover bg-no-repeat basis-[48%] p-5 m-1 rounded-3xl"><a href="#" class="font-bold text-2xl">Norte</a></div>
-                        <div class="bg-centroeste bg-center bg-cover bg-no-repeat basis-[48%] p-5 m-1 rounded-3xl"><a href="#" class="font-bold text-2xl">Centro-oeste</a></div>
-                        <div class="bg-sul bg-center bg-cover bg-no-repeat basis-[48%] p-5 m-1 rounded-3xl"><a href="#" class="font-bold text-2xl">Sul</a></div>
-                        <div class="bg-sudeste bg-center bg-cover bg-no-repeat basis-[48%] p-5 m-1 rounded-3xl"><a href="#" class="font-bold text-2xl">Sudeste</a></div>
-                    </div>
-                </div> -->
-            </section>
+                    <div class="line1 transition-all duration-500 ease-[ease] w-8 h-0.5 my-2 bg-new-purple"></div>
+                    <div class="line2 transition-all duration-500 ease-[ease] w-8 h-0.5 my-2 bg-new-purple"></div>
+                    <div class="line3 transition-all duration-500 ease-[ease] w-8 h-0.5 my-2 bg-new-purple"></div>
+                </div><!--Menu-Hambúrguer-->
+            </nav><!--NavBar-->
+            <section class="bg-nav bg-center bg-cover bg-no-repeat h-[92vh] flex justify-center items-center text-new-white px-[5%] py-[100px] max-xl:flex-wrap max-xl:h-max max-xl:items-end">
+                <div class="max-xl:mt-5 text-center">
+                    <h1 class="text-5xl max-md:text-3xl font-inknut border-r-new-yellow mb-8">Cada prato é uma nova <span class="font-inknut text-new-green">experiência</span>.</h1>
+                    <p class="text-2xl">Uma jornada culinária que celebra sabores autênticos e experiências inesquecíveis.</p>
+                </div><!--main-text-->
+            </section><!--Header-Main-view-->
         </header>
+
+        <main>
+
+        </main>
         <script src="../js/mobile-menu.js"></script>
     </body>
 </html>
