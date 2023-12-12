@@ -26,6 +26,11 @@
                             feijoada: " url(../img/feijoada.jpg)",
                             parmegiana: " url(../img/parmegiana.webp)",
                             torta: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/torta.avif)",
+                            cookiepie: "linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/cookiepie.jpg)",
+                            petite: " url(../img/petit-gateau.webp)",
+                            banoffee: " url(../img/banoffee.jpg)",
+                            brownie: " url(../img/brownie.jpg)",
+                            mousse: " url(../img/mousse.jpg)",
 
                         },
                         colors: {
@@ -137,13 +142,13 @@
                             <h1 class="ml-auto">R$99</h1>
                         </div>
                     </div>
-                    <a href="" class="text-new-yellow border-2 border-new-yellow inline-block p-4 hover:bg-new-yellow hover:text-new-light-gray">Mais entradas</a>
+                    <a href="" class="text-new-green border-2 border-new-green inline-block p-4 hover:bg-new-green hover:text-new-light-gray">Mais entradas</a>
                 </div>
             </section><!--Entradas-->
 
-            <div class="bg-churras bg-center bg-cover bg-no-repeat w-full h-[300px]"></div>
+            <div class="bg-churras bg-center bg-cover bg-no-repeat w-full h-[300px] max-lg:hidden"></div>
 
-            <section class="bg-new-light-gray px-[5%] py-24 flex items-start justify-center flex-row-reverse max-lg:flex-col">
+            <section class="bg-new-white px-[5%] py-24 flex items-start justify-center flex-row-reverse max-lg:flex-col">
                 <div class="bg-penne w-[450px] max-lg:w-full max-lg:h-[500px] h-[736px] bg-cover bg-end bg-no-repeat ml-12 shadow-2xl max-lg:ml-0"></div>
                 <div class="text-new-gray text-2xl">
                     <h1 class="font-inknut text-3xl mb-12 max-lg:text-center max-lg:mt-16">Menu Principal</h1>
@@ -191,13 +196,63 @@
                             <h1 class="ml-auto">R$99</h1>
                         </div>
                     </div>
-                    <a href="" class="text-new-yellow border-2 border-new-yellow inline-block p-4 hover:bg-new-yellow hover:text-new-light-gray float-right">Mais pratos</a>
+                    <a href="" class="text-new-green border-2 border-new-green inline-block p-4 hover:bg-new-green hover:text-new-light-gray float-right">Mais pratos</a>
                 </div>
             </section><!--Menu Principal-->
             
-            <div class="bg-torta bg-center bg-cover bg-no-repeat w-full h-[300px]"></div>
+            <div class="bg-torta bg-center bg-cover bg-no-repeat w-full h-[300px] max-lg:hidden"></div>
 
-
+            <section class="bg-new-light-gray px-[5%] py-24 flex items-start justify-center max-lg:flex-col">
+                <div class="bg-cookiepie w-[450px] max-lg:w-full max-lg:h-[500px] h-[736px] bg-center bg-cover bg-end bg-no-repeat mr-12 shadow-2xl max-lg:mr-0"></div>
+                <div class="text-new-gray text-2xl">
+                    <h1 class="font-inknut text-3xl mb-12 max-lg:text-center max-lg:mt-16">Entradas</h1>
+                    <!--Petite-gateau-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-petite bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Petite Gateau</h1>
+                                <p>Bolinho de chocolate com centro cremoso.</p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <!--Brownie-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-brownie bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Brownie</h1>
+                                <p>Bolo denso e macio, rico em chocolate.</p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <!--Banoffee-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-banoffee bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Banoffee</h1>
+                                <p>Torta com base de banana, toffee e chocolate.</p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <!--Mousse-->
+                    <div class="flex justify-start items-start flex-1 mb-8">
+                        <div class="bg-mousse bg-center bg-cover bg-no-repeat w-20 h-20 rounded-full mr-8 shadow-xl"></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="mb-2 pb-2 border-b-2 border-new-gray border-dashed">
+                                <h1 class="font-inknut">Mousse de maracujá</h1>
+                                <p>Sobremesa leve, cremosa, e com sabor intenso de maracujá.</p>
+                            </div>
+                            <h1 class="ml-auto">R$99</h1>
+                        </div>
+                    </div>
+                    <a href="" class="text-new-green border-2 border-new-green inline-block p-4 hover:bg-new-green hover:text-new-light-gray">Mais sobremesas</a>
+                </div>
+            </section><!--Entradas-->
         </main>
 
 
