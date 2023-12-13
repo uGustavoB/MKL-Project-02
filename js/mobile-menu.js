@@ -1,5 +1,3 @@
-// Criar um programa que adiciona e remove classes tailwind para ativar o menu mobile
-
 class MenuNavBar{
     constructor(mobileMenu, navList, navLinks, navLogo){
         this.mobileMenu = document.querySelector(mobileMenu);

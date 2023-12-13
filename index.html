@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -22,6 +22,7 @@
                         colors: {
                             "new-white": "var(--white)",
                             "new-gray": "var(--gray)",
+                            "new-dark-gray": "var(--darkgray)",
                             "new-light-gray": "var(--lightgray)",
                             "new-vine-red": "var(--vinered)",
                             "new-dark-blue": "var(--darkblue)",
@@ -45,28 +46,29 @@
         </script>
         <title>Sabor de Brasil</title>
     </head>
-    <body class=" text-new-purple bg-new-white">
+    <body class=" text-new-purple bg-new-white dark:text-new-white dark:bg-new-gray">
        <header class="h-screen">
-            <nav class="h-[8vh] bg-new-white flex justify-between items-center text-xl">
-                <div class="basis-[calc(100%_/_3)] text-right">
+            <nav class="h-[8vh] bg-new-white flex justify-between items-center text-xl dark:text-new-purple">
+                <div class="basis-[calc(100%_/_3)] flex justify-between items-center">
+                    <div class="dark-mode-button relative left-10 bg-new-light-gray px-2 py-1 text-3xl rounded-full hover:cursor-pointer"><div href="" class="dark-mode-icon bi bi-moon-stars"></div></div>
                     <a href="./pages/menu.html" class="inline-block hover:scale-110 transition ease-in-out duration:500 max-lg:hidden">MENU</a>
-                </div>
-                <div class="logo logo-bg w-72 h-72 flex justify-center items-center relative bg-new-white rounded-[80px] max-lg:ml-[52px] max-lg:w-48 max-lg:h-48 max-lg:min-w-[12rem] max-lg:rounded-[50px]">
-                    <a href="./index.html" class="bg-logo bg-center bg-contain bg-no-repeat w-[180px] h-[180px] relative top-12 hover:scale-105 transition ease-in-out duration:500 max-lg:w-32 max-lg:h-32 max-lg:top-9"></a>
-                </div>
+                </div><!--Menu-Link-->
+                <div class="logo logo-bg w-72 h-72 flex justify-center items-center relative bg-new-white rounded-[80px] max-lg:ml-[52px] max-lg:w-48 max-lg:h-48 max-lg:min-w-[12rem] max-lg:rounded-[50px] max-2xl:w-60 max-2xl:h-60 max-2xl:rounded-[60px]">
+                    <a href="./index.html" class="bg-logo bg-center bg-contain bg-no-repeat w-[180px] h-[180px] relative top-12 hover:scale-105 transition ease-in-out duration:500 max-lg:w-32 max-lg:h-32 max-lg:top-9 max-2xl:w-40 max-2xl:h-40"></a>
+                </div><!--Logo-->
                 <div class="basis-[calc(100%_/_3)]">
                     <ul class="nav-list flex max-lg:hidden max-lg:absolute max-lg:w-full max-lg:h-[92vh] max-lg:flex-col max-lg:items-center max-lg:justify-around max-lg:translate-x-full max-lg:right-0 max-lg:top-[8vh] max-lg:bg-new-light-gray">
                         <li class="hidden mx-5 hover:scale-110 transition ease-in-out duration:500"><a href="./pages/menu.html">MENU</a></li>
-                        <li class="mx-5 hover:scale-110 transition ease-in-out duration:500 max-lg:hidden"><a href="#reserva">RESERVA</a></li>
-                        <li class="mx-5 hover:scale-110 transition ease-in-out duration:500 max-lg:hidden"><a href="#contato">CONTATO</a></li>
+                        <li class="mx-5 hover:scale-110 transition ease-in-out duration:500 max-lg:hidden"><a href="./index.html#reserva">RESERVA</a></li>
+                        <li class="mx-5 hover:scale-110 transition ease-in-out duration:500 max-lg:hidden"><a href="./index.html#contato">CONTATO</a></li>
                     </ul>
-                </div>
+                </div><!--Mobile-Links-List-->
                 <div class="mobile-menu lg:hidden relative right-10 px-[10px] rounded-full bg-new-light-gray hover:cursor-pointer">
                     <div class="line1 transition-all duration-500 ease-[ease] w-8 h-0.5 my-2 bg-new-purple"></div>
                     <div class="line2 transition-all duration-500 ease-[ease] w-8 h-0.5 my-2 bg-new-purple"></div>
                     <div class="line3 transition-all duration-500 ease-[ease] w-8 h-0.5 my-2 bg-new-purple"></div>
-                </div>
-            </nav>
+                </div><!--Menu-Hambúrguer-->
+            </nav><!--NavBar-->
             <section class="bg-nav bg-center bg-cover bg-no-repeat h-[92vh] bg-fixed flex justify-end items-center flex-col text-new-white">
                 <div class="flex flex-col items-center basis-full justify-center">
                     <h1 class="type-animation1 text-5xl max-md:text-3xl font-inknut border-r-new-yellow border-r-[6px] border-solid mb-[25px] w-full overflow-hidden whitespace-nowrap">Variedades Brasileiras</h1>
@@ -77,13 +79,13 @@
             </section>
         </header>
         <main>
-            <section class="py-24 px-[15%] flex flex-wrap justify-around items-stretch text-center max-lg:flex-col">
+            <section class="bg-new-light-gray py-24 px-[15%] flex flex-wrap justify-around items-stretch text-center max-lg:flex-col dark:bg-new-gray">
                 <div class="basis-full mb-[50px]">
                     <h1 class="text-5xl font-bold my-[20px]">Conheça o nosso restaurante</h1>
                     <p class="text-xl">Queremos levar praticidade, comodidade e comida de qualidade para você, com uma diversidade de comidas das 5 regiões do país.</p>
                 </div>
                 <div class="basis-6/12 flex items-center flex-col text-[20px]">
-                    <img src="/img/missao.png" alt="" class="w-[80px] h-80px my-[15px]">
+                    <img src="/img/missao.png" alt="" class="w-[80px] h-80px my-[15px] dark:invert">
                     <h1 class="text-[2rem] font-bold">Missão</h1>
                     <p class="leading-7 my-[15px] mx-[10px]">Oferecer aos nossos clientes um cardápio variado, preservando a essência da culinária típica brasileira. Utilizando ingredientes altamente frescos, selecionados e de alta qualidade.</p>
                 </div>
@@ -105,9 +107,9 @@
                 </div>
             </section>
 
-            <div class="w-10/12 h-9 bg-new-green mx-auto rounded-[20px]"></div>
+            <div class="w-10/12 h-9 bg-new-green mx-auto rounded-[20px] relative -top-[18px] dark:top-[18px]"></div>
         
-            <section class="py-24 px-[10%] flex justify-center items-center flex-col">
+            <section class="py-24 px-[10%] flex justify-center items-center flex-col dark:bg-new-dark-gray">
                 <div class="flex max-lg:flex-col">
                     <div class="bg-comidas bg-center bg-cover bg-no-repeat w-[500px] h-[300px] flex justify-center items-center rounded-[100px] mx-2.5 shadow-2xl max-lg:mx-auto max-lg:w-full">
                         <div class="h-16 w-1.5">
@@ -140,7 +142,9 @@
                 </div>
             </section>
 
-            <div class="w-10/12 h-9 mb-24 bg-new-yellow mx-auto rounded-[20px]"></div>
+            <div class="dark:bg-new-dark-gray pb-24">
+                <div class="w-10/12 h-9 bg-new-yellow mx-auto rounded-[20px]"></div>
+            </div>
 
             <section class="bg-reserva bg-center bg-cover bg-no-repeat flex justify-around items-center flex-wrap" id="reserva">
                 <div class="max-w-lg mx-5 max-[1120px]:max-w-[90%] max-[1120px]:mt-5">
@@ -150,16 +154,16 @@
                         <li class="list-inside list-disc">Desfrute de um atendimento exclusivo, adaptado às suas preferências. De ocasiões especiais a jantares casuais, nossa equipe está pronta para tornar sua noite memorável. Garanta seu lugar para uma experiência personalizada.</li>
                     </ul>
                 </div>
-                <form action="" class="max-w-lg bg-new-white p-4 m-5 max-[1120px]:max-w-[90%]">
+                <form action="" class="max-w-lg bg-new-white p-4 m-5 max-[1120px]:max-w-[90%] dark:bg-new-gray">
                     <h1 class="text-2xl font-bold">Faça sua reserva aqui:</h1>
                     <label for="name"><b>Nome:</b></label>
-                    <input type="text" placeholder="Digite seu nome:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5 shadow-md" required>
+                    <input type="text" placeholder="Digite seu nome:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5 shadow-md dark:bg-new-dark-gray" required>
                     <label for="email"><b>Email:</b></label>
-                    <input type="email" placeholder="Digite seu email:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5 shadow-md" required>
+                    <input type="email" placeholder="Digite seu email:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5 shadow-md dark:bg-new-dark-gray" required>
                     <label for="tel"><b>Telefone:</b></label>
-                    <input type="tel" placeholder="Digite seu telefone:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5 shadow-md" required>
+                    <input type="tel" placeholder="Digite seu telefone:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5 shadow-md dark:bg-new-dark-gray" required>
                     <label for="qtde"><b>Quantidade de pessoas:</b></label>
-                    <select name="01" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5 shadow-md">
+                    <select name="01" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5 shadow-md dark:bg-new-dark-gray">
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
@@ -170,12 +174,12 @@
                         <option value="08">08</option>
                     </select>
                     <label for="date"><b>Data:</b></label>
-                    <input type="date" placeholder="Digite a data da reserva:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5 shadow-md" required>
+                    <input type="date" placeholder="Digite a data da reserva:" class="w-full bg-new-light-gray border-none p-3.5 mt-1.5 mb-5 shadow-md dark:bg-new-dark-gray" required>
                     <button type="submit" class="text-new-white border-none bg-new-yellow py-4 px-5 w-full cursor-pointer shadow-lg">Reservar</button>
                 </form>
             </section>
         </main>
-        <footer class="py-20 px-[10%] bg-new-purple text-new-white flex max-lg:flex-col" id="contato">
+        <footer class="py-20 px-[10%] bg-new-purple text-new-white flex max-lg:flex-col dark:bg-new-dark-gray" id="contato">
             <ul class="w-3/12 max-lg:w-full mb-8">
                 <h1 class="text-2xl font-bold mb-4">Sabor de Brasil</h1>
                 <p class="mb-10">Uma Jornada Culinária que Celebra Sabores Autênticos e Experiências Inesquecíveis.</p>
@@ -206,5 +210,6 @@
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
         <script src="js/mobile-menu.js"></script>
+        <script src="./js/dark-mode.js"></script>
     </body>
 </html>
