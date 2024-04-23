@@ -1,15 +1,15 @@
 class MenuNavBar{
-    constructor(mobileMenu, navList, navLinks, navLogo){
-        this.mobileMenu = document.querySelector(mobileMenu);
-        this.navList = document.querySelector(navList);
-        this.navLogo = document.querySelector(navLogo);
-        this.navLinks = document.querySelectorAll(navLinks);
+constructor (mobileMenu, navList, navLinks, navLogo) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.navList = document.querySelector(navList);
+    this.navLogo = document.querySelector(navLogo);
+    this.navLinks = document.querySelectorAll(navLinks);
 
         this.activeClass = 'active';
         this.displayBlock = 'max-lg:block';
-        this.displayFlex = 'max-lg:flex';
-        this.displayNone = 'max-lg:hidden';
-        this.translateX = 'max-lg:translate-x-full';
+    this.displayFlex = 'max-lg:flex';
+    this.displayNone = 'max-lg:hidden';
+    this.translateX = 'max-lg:translate-x-full';
         this.zIndex = 'max-lg:z-50';
 
         this.handleClick = this.handleClick.bind(this);
